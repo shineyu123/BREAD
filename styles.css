@@ -90,6 +90,7 @@ button {
 	border-radius: 50%;
     padding: 12px 20px;
     font-size: 14px;
+	font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
 }
@@ -266,7 +267,7 @@ button:hover {
 .play {
     width: 90px;
     height: 90px;
-    background-image: url('speech.png');
+    background-image: url('play.png');
     background-size: cover;
     background-position: center;
     margin-right: 0;
@@ -279,4 +280,54 @@ button:hover {
     background-size: cover;
     background-position: center;
     margin-right: 50px;
+}
+
+.speech1-container {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
+}
+
+/* About */
+.ahead {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.abody {
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 30px;
+}
+
+.about {
+    width: 75vw; /* 60% of viewport width */
+    max-width: 1500px; /* Maximum width */
+    /*height: 25vw; /* Maintain aspect ratio */
+   /* max-height: 350px; /* Maximum height */
+    background-color: #F2F6D0;
+	border: 1px solid #EFDCAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+	font-size: 14px;
+	padding: 20px;
+	margin: 30px auto;
+}
+
+/*Contact*/
+.chead {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+
+.cbody {
+	font-weight: bold;
+	font-size: 15px;
+	margin-top: 30px;
 }
