@@ -1,0 +1,282 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header and Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+/* Logo */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #D98324;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a img {
+    margin-right: 8px;
+}
+
+/* Dropdown menu */
+.sdrop-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: white;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 180px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sdrop-menu li {
+    padding: 5px 15px;
+}
+
+.sdrop-menu li a {
+    color: black;
+    font-size: 14px;
+    display: block;
+}
+
+.sdrop-menu li a:hover {
+    background: #007BFF;
+    color: white;
+}
+
+/* Show dropdown on hover */
+.sdrop:hover .sdrop-menu {
+    display: block;
+}
+
+/* Buttons */
+section {
+    text-align: center;
+    padding: 50px 0;
+}
+
+button {
+    color: black;
+    border: none;
+	border-radius: 50%;
+    padding: 12px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.sign {
+	width: 300px;
+	height: 300px;
+	background-image: url('sign.png');
+    background-size: cover;
+    background-position: center;
+	margin: 50px;
+}
+
+.speech {
+	width: 300px;
+	height: 300px;
+	background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+	margin: 50px;
+}
+
+.custom {
+	width: 300px;
+	height: 300px;
+	background-image: url('custom.png');
+    background-size: cover;
+    background-position: center;
+	margin: 50px;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Sign to Text */
+.sign-container {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
+}
+
+.frame-container {
+    display: flex;
+    flex-direction: column; /* Stack frame and text */
+    align-items: center;
+}
+
+.frame {
+    width: 60vw; /* 60% of viewport width */
+    max-width: 750px; /* Maximum width */
+    height: 25vw; /* Maintain aspect ratio */
+    max-height: 350px; /* Maximum height */
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.text-container {
+    margin-top: 10px; /* Space between frame and text */
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    gap: 100px; /* Space between buttons */
+	display: inline-block;
+}
+
+.start1 {
+    width: 90px;
+    height: 90px;
+    background-image: url('sign.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.sign1 {
+    width: 90px;
+    height: 90px;
+    background-image: url('sign.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.hidden {
+    display: none; /* Hide text initially */
+}
+
+#message1 {
+    font-size: 14px;
+    color: black;
+    font-weight: normal;
+    margin-left: 20px; /* Adds spacing from the button */
+}
+
+#message2 {
+    font-size: 14px;
+    color: black;
+    font-weight: bold;
+    margin-left: 20px; /* Adds spacing from the button */
+}
+
+/*Speech to Text */
+.speech1 {
+    width: 90px;
+    height: 90px;
+    background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
+
+.speech-container {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
+}
+
+.start2 {
+	width: 150px;
+	height: 150px;
+	background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+	margin-top: 100px;
+}
+
+.frame1-container {
+    display: flex;
+    flex-direction: column; /* Stack frame and text */
+    align-items: center;
+}
+
+.frame1 {
+    width: 60vw; /* 60% of viewport width */
+    max-width: 750px; /* Maximum width */
+    height: 25vw; /* Maintain aspect ratio */
+    max-height: 350px; /* Maximum height */
+    background-color: #F2F6D0;
+	border: 1px solid #EFDCAB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+	
+.recording {
+    width: 90px;
+    height: 90px;
+    background-image: url('recording.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	align-items: center;
+}
+
+.button1-container {
+    display: flex;
+    align-items: center;
+    gap: 150px; /* Space between buttons */
+	display: inline-block;
+}
+
+.play {
+    width: 90px;
+    height: 90px;
+    background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 0;
+}
+
+.speech2 {
+    width: 90px;
+    height: 90px;
+    background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+}
