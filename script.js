@@ -48,19 +48,51 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", function () {
     const start2Button = document.querySelector(".start2");
+    const playButton = document.querySelector(".play");
+	const play2Button = document.querySelector(".play2");
+    const speech2Button = document.querySelector(".speech2");
+    const speechContainer = document.querySelector(".speech-container");
 
+    // When Start2 is clicked
     if (start2Button) {
         start2Button.addEventListener("click", function () {
+            localStorage.setItem("redirectedFromTemp", "true"); // Save state
             window.location.href = "temporary-page.html"; // Redirect to temporary page
         });
     }
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Select buttons
-    const speech2Button = document.querySelector(".speech2");
+    // When Play is clicked
+    if (playButton) {
+        playButton.addEventListener("click", function () {
+            localStorage.setItem("redirectedFromTemp", "true"); // Keep the same state
+            window.location.href = "temporary1-page.html"; // Redirect to temporary1-page.html
+        });
+    }
 	
-	speech1Button.addEventListener("click", function () {
-        window.location.href = "speech-to-text.html";
-    });
+	if (play2Button) {
+        play2Button.addEventListener("click", function () {
+            localStorage.setItem("redirectedFromTemp", "true"); // Keep the same state
+            window.location.href = "temporary2-page.html"; // Redirect to temporary2-page.html
+        });
+    }
+
+    // When Speech2 is clicked
+    if (speech2Button) {
+        speech2Button.addEventListener("click", function () {
+            window.location.href = "speech-to-text.html"; // Redirect back to speech-to-text.html
+        });
+    }
+
+    // Check if returning from temporary pages
+    if (localStorage.getItem("redirectedFromTemp") === "true") {
+        localStorage.removeItem("redirectedFromTemp"); // Remove flag
+
+        // Hide start2 button
+        if (start2Button) start2Button.style.display = "none";
+
+        // Show speech-container
+        if (speechContainer) {
+            speechContainer.style.display = "flex";
+        }
+    }
 });
