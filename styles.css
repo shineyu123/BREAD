@@ -12,6 +12,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* Logo */
@@ -69,7 +70,7 @@ nav ul li a img {
 }
 
 .sdrop-menu li a:hover {
-    background: #007BFF;
+    filter: brightness(70%);
     color: white;
 }
 
@@ -89,7 +90,7 @@ button {
     border: none;
 	border-radius: 50%;
     padding: 12px 20px;
-    font-size: 14px;
+	font-size: 14px;
 	font-weight: bold;
     cursor: pointer;
     transition: background 0.3s;
@@ -102,6 +103,7 @@ button {
     background-size: cover;
     background-position: center;
 	margin: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .speech {
@@ -111,6 +113,7 @@ button {
     background-size: cover;
     background-position: center;
 	margin: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .custom {
@@ -120,10 +123,11 @@ button {
     background-size: cover;
     background-position: center;
 	margin: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
-    background: #0056b3;
+    filter: brightness(70%);
 }
 
 /* Sign to Text */
@@ -133,6 +137,7 @@ button:hover {
     align-items: center;
     gap: 150px; /* Space between frame and button */
     padding: 50px;
+	margin-top: 100px;
 }
 
 .frame-container {
@@ -151,18 +156,20 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .text-container {
     margin-top: 10px; /* Space between frame and text */
     text-align: center;
+	justify-content: center;
 }
 
 .button-container {
     display: flex;
     align-items: center;
     gap: 100px; /* Space between buttons */
-	display: inline-block;
+	justify-content: center;
 }
 
 .start1 {
@@ -172,6 +179,7 @@ button:hover {
     background-size: cover;
     background-position: center;
     margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .sign1 {
@@ -181,6 +189,17 @@ button:hover {
     background-size: cover;
     background-position: center;
     margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.speech1 {
+    width: 90px;
+    height: 90px;
+    background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hidden {
@@ -202,36 +221,85 @@ button:hover {
 }
 
 /*Speech to Text */
-.speech1 {
-    width: 90px;
-    height: 90px;
-    background-image: url('speech.png');
-    background-size: cover;
-    background-position: center;
-    margin-right: 50px;
-}
-
-.speech-container {
-    display: flex;
-    justify-content: center; /* Centering content */
-    align-items: center;
-    gap: 150px; /* Space between frame and button */
-    padding: 50px;
-}
-
 .start2 {
 	width: 150px;
 	height: 150px;
 	background-image: url('speech.png');
     background-size: cover;
     background-position: center;
+	margin-top: 200px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.speech-container {
+    display: none;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
+}
+
+.frame1-main {
+    width: 60vw; /* 60% of viewport width */
+    max-width: 750px; /* Maximum width */
+    height: 25vw; /* Maintain aspect ratio */
+    max-height: 350px; /* Maximum height */
+    background-color: #F2F6D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.play {
+    width: 90px;
+    height: 90px;
+    background-image: url('play.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.speech2 {
+    width: 90px;
+    height: 90px;
+    background-image: url('speech.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Speech1 to Text*/
+.speech1-container {
+    display: flex;
+    justify-content: center; /* Centering content */
+    align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
 	margin-top: 100px;
 }
 
-.frame1-container {
+.play2 {
+    width: 90px;
+    height: 90px;
+    background-image: url('play.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Temporary Page */
+.temp-speech-container {
     display: flex;
-    flex-direction: column; /* Stack frame and text */
+    justify-content: center; /* Centering content */
     align-items: center;
+    gap: 150px; /* Space between frame and button */
+    padding: 50px;
+	margin-top:100px;
 }
 
 .frame1 {
@@ -245,6 +313,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     border-radius: 20px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 	
 .recording {
@@ -255,39 +324,27 @@ button:hover {
     background-position: center;
     margin-right: 50px;
 	align-items: center;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-.button1-container {
-    display: flex;
-    align-items: center;
-    gap: 150px; /* Space between buttons */
-	display: inline-block;
-}
-
-.play {
-    width: 90px;
-    height: 90px;
-    background-image: url('play.png');
-    background-size: cover;
-    background-position: center;
-    margin-right: 0;
-}
-
-.speech2 {
-    width: 90px;
-    height: 90px;
-    background-image: url('speech.png');
-    background-size: cover;
-    background-position: center;
-    margin-right: 50px;
-}
-
-.speech1-container {
+/*Temporary1 Page*/
+.temp1-speech-container {
     display: flex;
     justify-content: center; /* Centering content */
     align-items: center;
     gap: 150px; /* Space between frame and button */
     padding: 50px;
+	margin-top: 100px;
+}
+
+.play1 {
+    width: 90px;
+    height: 90px;
+    background-image: url('play.png');
+    background-size: cover;
+    background-position: center;
+    margin-right: 50px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /* About */
@@ -306,8 +363,6 @@ button:hover {
 .about {
     width: 75vw; /* 60% of viewport width */
     max-width: 1500px; /* Maximum width */
-    /*height: 25vw; /* Maintain aspect ratio */
-   /* max-height: 350px; /* Maximum height */
     background-color: #F2F6D0;
 	border: 1px solid #EFDCAB;
     display: flex;
@@ -317,6 +372,7 @@ button:hover {
 	font-size: 14px;
 	padding: 20px;
 	margin: 30px auto;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 /*Contact*/
@@ -330,4 +386,62 @@ button:hover {
 	font-weight: bold;
 	font-size: 15px;
 	margin-top: 30px;
+}
+
+.cabout {
+    width: 50vw; /* 60% of viewport width */
+    max-width: 1500px; /* Maximum width */
+    background-color: #F2F6D0;
+	border: 1px solid #EFDCAB;
+    display: flex;
+	flex-direction: column;
+	gap: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+	font-size: 14px;
+	padding: 20px;
+	margin: 30px auto;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+}
+
+.chead {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cbody {
+    font-size: 16px;
+    text-align: center;
+}
+
+.input-container {
+    position: relative;
+    width: 250px;
+	margin: 10px auto;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px 35px; /* Space for icon */
+    border: 1px solid #443627;
+    border-radius: 5px;
+    font-size: 14px;
+	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-container .icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
 }
